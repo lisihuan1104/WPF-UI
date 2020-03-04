@@ -1,0 +1,19 @@
+﻿<Window x:Class="PanuonUI.Loading"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PanuonUI"
+        xmlns:gif="https://github.com/XamlAnimatedGif/XamlAnimatedGif"
+        mc:Ignorable="d"
+        Title="Loading" Width="610" Height="427" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" MouseDown="Window_MouseDown" ShowInTaskbar="False">
+    <Grid>
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Image gif:AnimationBehavior.SourceUri="Image\loading.gif" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Width="150" Height="150"></Image>
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock FontSize="30" Text="数据正在上传" Margin="5"></TextBlock>
+                <TextBlock FontSize="20" Text="请稍等..." Margin="5"></TextBlock>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

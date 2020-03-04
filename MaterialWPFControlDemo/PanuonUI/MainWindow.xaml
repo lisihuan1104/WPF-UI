@@ -1,0 +1,40 @@
+﻿<pu:WindowX x:Class="PanuonUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PanuonUI"
+        xmlns:pu="clr-namespace:Panuon.UI.Silver;assembly=Panuon.UI.Silver"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Closing="WindowX_Closing">
+    <Grid Name="grid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+            <Button Margin="10" Content="Cuter" Click="Button_Click_1" Width="100"
+                        pu:ButtonHelper.ButtonStyle="Outline"
+                        pu:ButtonHelper.HoverBrush="#FF3CBCC9" />
+
+            <Button Margin="10" Content="Stop" Click="Button_Click_2" Width="100"
+                        pu:ButtonHelper.ButtonStyle="Outline"
+                        pu:ButtonHelper.HoverBrush="#FF3CBCC9" />
+
+            <pu:ColorPicker  Width="200" Height="30" IsOpacityEnabled="True" IsMeasuredValueVisible="True" IsDefaultColorPanelVisible="True" Name="ColorPicker" SelectedBrushChanged="ColorPicker_SelectedBrushChanged"/>
+
+
+            <Button Margin="10" Content="Pending" Click="Button_Click_3" Width="100"
+                        pu:ButtonHelper.ButtonStyle="Outline"
+                        pu:ButtonHelper.HoverBrush="#FF3CBCC9" />
+        </StackPanel>
+        <Grid Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <pu:ImageCuter Grid.Column="0" Name="imageCuter"></pu:ImageCuter>
+            <Image Name="image" Grid.Column="1"></Image>
+        </Grid>
+    </Grid>
+</pu:WindowX>

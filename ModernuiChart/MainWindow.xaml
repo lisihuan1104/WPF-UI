@@ -1,0 +1,77 @@
+﻿<Window x:Class="ModernuiChart.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ModernuiChart"
+        mc:Ignorable="d"
+        xmlns:MetroChart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart"  
+        xmlns:chart="using:De.TorstenMandelkow.MetroChart"
+       Title="Chart" Height="450" Width="800" WindowState="Maximized">
+    <Grid Name="grid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <MetroChart:ClusteredBarChart Grid.Row="0" Grid.Column="0" ChartSubTitle="Population in millions"  
+                ChartTitle="Countries by population">
+            <MetroChart:ClusteredBarChart.Series>
+                <MetroChart:ChartSeries DisplayMember="Name"
+                            ItemsSource="{Binding Path=Populations}"
+                            SeriesTitle="World largest populations"
+                            ValueMember="Count">
+                </MetroChart:ChartSeries>
+            </MetroChart:ClusteredBarChart.Series>
+        </MetroChart:ClusteredBarChart>
+        <MetroChart:ClusteredColumnChart Grid.Row="0" Grid.Column="1" ChartSubTitle="Population in millions"  
+                ChartTitle="Countries by population">
+            <MetroChart:ClusteredColumnChart.Series>
+                <MetroChart:ChartSeries DisplayMember="Name"
+                            ItemsSource="{Binding Path=Populations}"
+                            SeriesTitle="World largest populations"
+                            ValueMember="Count" />
+            </MetroChart:ClusteredColumnChart.Series>
+        </MetroChart:ClusteredColumnChart>
+        <MetroChart:DoughnutChart Grid.Row="0" Grid.Column="2" ChartSubTitle="Population in millions"  
+                ChartTitle="Countries by population">
+            <MetroChart:DoughnutChart.Series>
+                <MetroChart:ChartSeries DisplayMember="Name"
+                            ItemsSource="{Binding Path=Populations}"
+                            SeriesTitle="World largest populations"
+                            ValueMember="Count" />
+            </MetroChart:DoughnutChart.Series>
+        </MetroChart:DoughnutChart>
+        <MetroChart:PieChart Grid.Row="1" Grid.Column="0" ChartSubTitle="Population in millions"  
+                ChartTitle="Countries by population">
+            <MetroChart:PieChart.Series>
+                <MetroChart:ChartSeries DisplayMember="Name"
+                            ItemsSource="{Binding Path=Populations}"
+                            SeriesTitle="World largest populations"
+                            ValueMember="Count" />
+            </MetroChart:PieChart.Series>
+        </MetroChart:PieChart>
+        <MetroChart:StackedBarChart Grid.Row="1" Grid.Column="1" ChartSubTitle="Population in millions"  
+                ChartTitle="Countries by population">
+            <MetroChart:StackedBarChart.Series>
+                <MetroChart:ChartSeries DisplayMember="Name"
+                            ItemsSource="{Binding Path=Populations}"
+                            SeriesTitle="World largest populations"
+                            ValueMember="Count" />
+            </MetroChart:StackedBarChart.Series>
+        </MetroChart:StackedBarChart>
+        <MetroChart:StackedColumnChart Grid.Row="1" Grid.Column="2" ChartSubTitle="Population in millions"
+                ChartTitle="Countries by population">
+            <MetroChart:StackedColumnChart.Series>
+                <MetroChart:ChartSeries DisplayMember="Name"
+                            ItemsSource="{Binding Path=Populations}"
+                            SeriesTitle="World largest populations"
+                            ValueMember="Count" />
+            </MetroChart:StackedColumnChart.Series>
+        </MetroChart:StackedColumnChart>
+    </Grid>
+</Window>

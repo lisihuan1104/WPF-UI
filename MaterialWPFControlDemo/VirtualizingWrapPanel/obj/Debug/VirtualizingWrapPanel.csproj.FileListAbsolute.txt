@@ -1,0 +1,7 @@
+E:\Code\WPF工具\MaterialWPFControlDemo\VirtualizingWrapPanel\obj\Debug\VirtualizingWrapPanel.dll
+E:\Code\WPF工具\MaterialWPFControlDemo\VirtualizingWrapPanel\obj\Debug\VirtualizingWrapPanel.pdb
+E:\Code\WPF工具\MaterialWPFControlDemo\VirtualizingWrapPanel\bin\Debug\VirtualizingWrapPanel.dll
+E:\Code\WPF工具\MaterialWPFControlDemo\VirtualizingWrapPanel\bin\Debug\VirtualizingWrapPanel.pdb
+E:\Code\WPF工具\MaterialWPFControlDemo\VirtualizingWrapPanel\obj\Debug\VirtualizingWrapPanel.Properties.Resources.resources
+E:\Code\WPF工具\MaterialWPFControlDemo\VirtualizingWrapPanel\obj\Debug\VirtualizingWrapPanel.csproj.GenerateResource.cache
+E:\Code\WPF工具\MaterialWPFControlDemo\VirtualizingWrapPanel\obj\Debug\VirtualizingWrapPanel.csproj.CoreCompileInputs.cache
